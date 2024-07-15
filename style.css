@@ -1,0 +1,273 @@
+:root{
+    --c1: #df4e4e;
+    --c2: #ffffff;
+    --c3: #000000;
+    --c4: #42a515;
+    --c5: #ddb5a0;
+    --c6: #a70a0a;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+/* Sekcja header dla telefonów komórkowych */
+header{
+    background-color: var(--c5);
+    text-align: center;
+    padding: 15px 4px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.menua{
+    text-decoration: none;
+    color: var(--c3);
+    background-color: var(--c4);
+    font-size: 20px;
+    padding: 5px;
+    display: block;
+    margin: 12px 0px;
+    font-weight: 600;
+    transition: 0.4s;
+ 
+}
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width: 13%; 
+    display:none;
+    vertical-align: middle;
+}
+
+
+/* Sekcja header dla większych ekranów */
+@media (min-width:400px){
+    .logo{
+        width: 10%; 
+        display:block;
+        margin: 10px auto;
+    }
+    .menua{
+        display: inline-block;
+        width:45%;
+    }
+    .menua:hover{
+    color:var(--c2);
+    }
+}
+
+@media (min-width: 800px){
+    .logo{
+        width: 13%; 
+        display:inline-block;
+        margin: 0 12px;
+        padding: 8px 14px;
+    }
+    .menua{
+        width: 20%;
+}
+    .menua:hover{
+        color:var(--c2);
+        background-color: var(--c3);
+    }
+    nav{
+        display: inline-block;
+        width:  80%;
+        vertical-align: middle;
+    }
+}
+
+div.obraz{
+    height: 600px;
+    background-image: url(img/top.jpg);
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 120px;
+}
+h2.cuk{
+    font-size: 48px;
+    padding-top: 40px;
+    text-align: center;
+}
+h3{
+    width: 18%;
+    display: inline-block;
+}
+.artykul{
+    text-align: center;
+    margin: auto;
+    width:80%;
+    
+}
+p.naglowek{
+    color: var(--c4);
+    background-color: var(--c5);
+    margin: 40px 0px;
+    padding: 10px;
+    font-size: 30px;
+}
+.naglowek0{
+    color: var(--c6);
+    border-bottom: 2px solid var(--c6);
+    border-radius: 20%;
+    font-size: 50px;
+    padding: 50px 50px 0 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h3{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+}
+.naglowek:hover{
+    background-color: var(--c4);
+    color: var(--c5);
+
+}
+div.oferta{
+    display: inline-block;
+    background-color: var(--c5);
+    width: 100%;
+}
+.ofertao{
+    display: inline-block;
+    margin: 0 0 20px 20px;
+    text-align: center;
+
+}
+
+
+@media (min-width:400px){
+    p.slogan{
+        font-size: 17px;
+    }
+}
+@media(min-width:800px){
+    p.slogan{
+        font-size: 20px;
+    }
+}
+    
+
+
+/* Sekcja oferta dla komórek */
+    @media (min-width:400px){
+        .ofertao{
+            width:20%;}
+        @media (min-width:800px){
+            .ofertao{
+                 width:15%;
+                 padding: 20px;
+            }
+    }
+}
+img.kucharz{
+    width: 20%;
+    margin: 20px;
+}
+
+p.slogan {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.footer{
+    text-align: center;
+    background-color: var(--c5);
+
+}
+div.row{
+    margin: 6px 0;
+}
+label{
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    font-weight: 600;
+}
+input {
+    width: 60%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 2px solid var(--c6);
+    vertical-align: middle;
+}
+textarea{
+    border-radius: 6px;
+    border: 2px solid var(--c6);
+    width: 60%;
+    vertical-align: top;
+
+}
+input[type="submit"]{
+    width: 100%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.4s;
+}
+input[type="submit"]:hover{
+    background-color: var(--c6);
+    color: var(--c2);
+}
+
+@media(min-width:800px){
+    form{
+        width: 40%;
+        margin: 10px auto;
+    }
+    label{
+        width: 20%;
+    }
+    input, textarea{
+        width: 70%;
+    }
+    .submit{
+        width: 70%;
+
+    }
+}
+
+p.adres{
+    font-size: 18px;
+    margin-top: 30px;
+}
+span{
+    font-weight: 700;
+}
+
+div.dane{
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
